@@ -355,6 +355,106 @@
 
 # else:
 #     print("Sorry, you have to grow taller!")
+#DAY 4
+# Randomisation and python lists
+# Randomisation means doing things in a random or unpredictable way.
+
+# In Python, we can use a module called random to pick or shuffle things randomly.
+# It's like rolling a dice or picking a card without looking
+# import random
+
+# names = ["Aman", "Priya", "Raj", "Simran"]
+# print(random.choice(names))  # Picks one name randomly
+
+# A list in Python is like a box that holds many values together, such as numbers, names, etc.
+# fruits = ["apple", "banana", "cherry"]
+
+# import random
+# random_integer = random.randint(1, 10)
+# # means here it generate any integer no from 1 to 10
+# print(random_integer)
+
+# now how we will create random floating number
+# import random
+# random_float = random.random()
+# # generates a random float between 0.0 and 1.0
+# print(random_float)
+
+# # To create a random float between a specific range, you can multiply the random float by the range size and add the minimum value.
+# now if we want to multiply the random float number
+# import random
+# random_float = random.random() * 10  # generates a random float between 0.0 and 10.0
+# print(random_float)
+
+#HEAD AND TAILS EXERCISE
+# import random
+# coin = "Heads" if random.randint(0, 1) == 0 else "Tails"
+# print(coin)
+
+# or
+
+# import random
+# random_side = random.randint(0, 1)
+# if random_side == 1:
+#     coin = "Heads"
+# else:
+#     coin = "Tails"
+# print(coin)
+
+#Python list
+# fruits = ["apple", "banana", "cherry"]
+# fruits.append("orange") # this will add "orange" to the list
+# fruits.remove("banana") # this will remove "banana" from the list
+# print(fruits)
+
+#exercise
+# you are going to write a program which will select a random name from a list of names. the person selected will have to pay for everybody food bill
+
+#split in python
+# import random
+
+# names = ["Aman", "Priya", "Raj", "Simran"]
+# selected_name = random.choice(names)
+# print(f"{selected_name} is going to pay for everybody's food bill!")
+
+# now write the code as th input is given by the user and it should be divided by comma
+# import random
+# names = input("Enter names separated by commas: ").split(",")
+# selected_name = random.choice(names)
+# print(f"{selected_name.strip()} is going to pay for everybody's food bill!")
+# Note: Ensure to strip any extra spaces from the names
+# Note: Ensure to handle cases where the input might be empty or invalid
+
+#make a list pf two different thing and now merge 
+# fruits = ["apple", "banana", "cherry"]
+# vegetables = ["carrot", "broccoli", "spinach"]
+# combined_list = fruits + vegetables
+# print(combined_list)
+
+# create a list of name of state of india
+# states_of_india = ["Maharashtra", "Karnataka", "Tamil Nadu", "Gujarat", "Rajasthan", "West Bengal", "Uttar Pradesh", "Kerala", "Andhra Pradesh", "Punjab"]
+# num_of_state = len(states_of_india)
+# print(states_of_india[num_of_state - 1])
+
+#exercise
+#teasure nap 
+#see video 44 for question or screenshort
+
+#start from video 47
+#DAY 5 
+#FOR LOOPS, RANGE AD CODE BLOCKS
+# loops means things that happen again and again
+# For loops are used to iterate over a sequence (like a list or a string) or to repeat a block of code a certain number of times.
+# For loops can be used to iterate over a range of numbers or elements in a list.
+#syntax for FOR loop 
+# for item in list_of_items:
+# do something to each item
+# for number in range(start, end):
+#     do_something(number)
+
+# fruits = ["apple", "mango", "banana"]
+# for fruit in fruits:
+#     print(fruit)
 
 
 
